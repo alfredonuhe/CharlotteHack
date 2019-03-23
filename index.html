@@ -20,8 +20,12 @@
 
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 
+    <script type="text/javascript" src="js/moment.min.js"></script>
+
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+
+     <script type="text/javascript" src="js/ms_exec.js"></script>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
@@ -54,10 +58,10 @@
                 <h2 class="col-xs-10 col-xs-push-1">Login:</h2>
             </div>
             <div class = "row">
-                <form class="col-xs-10 col-xs-push-1 form-box" action = "portal.html" method="post">
+                <form class="col-xs-10 col-xs-push-1 form-box" action = "javascript:handleLogin()" method="post">
                     <div class="input-group session-input">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input type="text" class="form-control" name= "session-username" placeholder="Username">
+                        <input id="username-input" type="text" class="form-control" name= "session-username" placeholder="Username">
                     </div>
                     <div class="input-group session-input">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
@@ -105,7 +109,7 @@
                     <form class="col-xs-12 form-box" action = "portal.html" method="post">
                         <div class="input-group session-input">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input type="text" class="form-control" name= "session-name" id="session-name" placeholder="Username">
+                            <input id="username-input-mobile" type="text" class="form-control" name= "session-name" id="session-name" placeholder="Username">
                         </div>
                         <div class="input-group session-input">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>

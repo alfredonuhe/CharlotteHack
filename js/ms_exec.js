@@ -16,3 +16,11 @@ $(document).ready(function() {
         $("#other-user-list").hide();
     });
 });
+
+function handleLogin(){
+    if($("#username-input-mobile").val() == "admin" || $("#username-input").val() == "admin"){
+        window.location = "./tete.html";
+    } else {
+        window.location = "./portal.html";
+    }
+}
