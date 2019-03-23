@@ -6,19 +6,13 @@ $(document).ready(function() {
     var mobileString = "";
     if (screen.width <= 480) mobileString = "-mobile";
 
-    $("#login-session" + mobileString).click(function(){
-        $("#login-register-tab" + mobileString).hide();
-        $("#login-tab" + mobileString).show();
+    $("#suggestion").click(function(){
+        $("#contacts-user-list").hide();
+        $("#other-user-list").show();
     });
 
-    $("#register-session" + mobileString).click(function(){
-        $("#login-register-tab" + mobileString).hide();
-        $("#register-tab" + mobileString).show();
-    });
-
-    $(".go-back-btn" + mobileString).click(function(){
-        $("#register-tab" + mobileString).hide();
-        $("#login-tab" + mobileString).hide();
-        $("#login-register-tab" + mobileString).show();
+    $("#contacts").click(function(){
+        $("#contacts-user-list").show();
+        $("#other-user-list").hide();
     });
 });
