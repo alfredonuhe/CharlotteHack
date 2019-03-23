@@ -15,12 +15,16 @@ $(document).ready(function() {
         $("#contacts-user-list").show();
         $("#other-user-list").hide();
     });
+
+    $(".user-id").click(function(){
+        $(".graph-img").attr("src", "img/" + $(this).text() + ".png");
+    });
 });
 
 function handleLogin(){
     if($("#username-input-mobile").val() == "admin" || $("#username-input").val() == "admin"){
-        window.location = "./tete.html";
+        window.location = "./adminPortal.html";
     } else {
-        window.location = "./portal.html";
+        window.location = "./userPortal.html";
     }
 }

@@ -49,6 +49,12 @@ body {
     height:  75%;
 }
 
+.graph-img{
+	margin-left: 12.5%;
+	width:   75%;
+    height:  75%;
+}
+
 .panel-body span{
 	color:green;
 	float: right;
